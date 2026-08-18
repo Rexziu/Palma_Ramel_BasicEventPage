@@ -1,6 +1,6 @@
 //DOM Element Selections
 const pageContainer = document.querySelector("#pageContainer");
-const mainheading = document.querySelector("#mainHeading");
+const mainHeading = document.querySelector("#mainHeading");
 const nameInput = document.querySelector("#nameInput");
 const messageArea = document.querySelector("#messageArea");
 
@@ -12,19 +12,19 @@ const resetButton = document.querySelector("#resetButton");
 //Displays the greeting using the user's input name.
 // Checks input then update heading and status message area.
 function displayGreeting() {
-    const name = nameInput.value.trim();
-    if (name === "") {
+    const userName = nameInput.value.trim();
+    if (userName === "") {
         messageArea.textContent =
             "Please enter your name.";
     } else {
-        mainheading.textContent = "Hello, " + name + "!";
+        mainHeading.textContent = "Hello, " + userName + "!";
         messageArea.textContent =
             "The greeting was displayed successfully.";
     }
 }
 
 //Updates the live typing feedback paragraph in real-time when the user types.
-function showTypedText() {
+function showTypesText() {
     messageArea.textContent = "You are typing: " + nameInput.value;
     "You are typing: " + nameInput.value;
     console.log("Input event deleted.");
@@ -39,7 +39,7 @@ function changeBackground() {
 
 //Resets the page elements, inputs, background color, and status messages back to default.
 function resetPage() {
-    mainheading.textContent = "Basic Event Page";
+    mainHeading.textContent = "Basic Event Page";
     nameInput.value = "";
     messageArea.textContent = "";
     document.body.style.backgroundColor = "#f3f4f6";
@@ -60,7 +60,7 @@ resetButton.addEventListener("mouseover", function() {
 greetingButton.addEventListener("click", displayGreeting);
 backgroundButton.addEventListener("click", changeBackground);
 resetButton.addEventListener("click", resetPage);
-nameInput.addEventListener("input", showTypedText);
+nameInput.addEventListener("input", showTypesText);
 
 
 //Initialization Log
