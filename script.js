@@ -44,6 +44,7 @@ function resetPage() {
     nameInput.value = "";
     typingMessage.textContent = "You are typing:";
     messageArea.textContent = "Enter your name and select an action.";
+    messageArea.textContent = "";
     document.body.style.backgroundColor = "#f3f4f6";
 }
 
