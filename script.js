@@ -13,12 +13,11 @@ const resetButton = document.querySelector("#resetButton");
 // Checks input then update heading and status message area.
 function displayGreeting() {
     const name = nameInput.value.trim();
-s
     if (name === "") {
         messageArea.textContent =
             "Please enter your name.";
     } else {
-        heading.textContent = "Hello, " + name;
+        heading.textContent = "Hello, " + name + "!";
         messageArea.textContent =
             "The greeting was displayed successfully.";
     }
