@@ -22,6 +22,11 @@ body {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     text-align: center;
 }
+/*For mainHeading*/
+#mainHeading {
+    color: #333;
+    margin-top: 0;
+}
 /*For text input styling*/
 input {
     width: 100%;
