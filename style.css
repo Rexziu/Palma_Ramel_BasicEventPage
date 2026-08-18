@@ -15,7 +15,7 @@ body {
 /*Main content container*/
 #pageContainer {
     width: 90%;
-    max-width: 600px;
+    max-width: 700px;
     padding: 30px;
     background: #fff;
     border-radius: 10px;
@@ -32,6 +32,10 @@ body {
     width: 100%;
     padding: 10px;
     margin-top: 8px;
+}
+/*For button group spacing*/
+.button-group {
+    margin-top: 20px;
 }
 /*For button styling*/
 button {

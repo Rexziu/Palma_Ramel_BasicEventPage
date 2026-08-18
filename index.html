@@ -13,19 +13,28 @@
     <main id="pageContainer">
         <!--Main title heading that updates when greeting-->
         <h1 id="mainHeading">Basic Event Page</h1>
-    
-        <input type="text" id="nameInput" placeholder="Enter your name"><br>
-        <button id="greetingButton"> Display Greeting </button>
-        <button id="backgroundButton"> Change Background </button>
-        <button id="resetButton"> Reset </button>
+
+        <!--Input field for getting user's name.-->
+        <label for="nameInput">Enter your name: </label>
+        <input type="text"
+        id="nameInput"
+        placeholder="Type your name"
+        />
+
+        <!--Button group container holding action controls-->
+        <div class="button-group">
+            <button id="greetingButton">Display Greeting</button>
+                <button id="backgroundButton">Change Background</button>
+                <button id="resetButton">Reset</button>
+        </div>
 
         <!--Status message area providing user action feedback.-->
-        <p id="messageArea">Enter your name and select an action.</p>
-
-
+        <p id="messageArea">Enter your name and select an action.</p><br>
+        <p>Name: Palma, Ramel | Course: BSIT | Section: 31-ITE-06 | Date: 2026-08-19</p>
+        
     </main>
+
     <!--Link to external JavaScript file executed with defer attribute-->
     <script src="script.js" defer></script>
-    <p>Name: Palma, Ramel | Course: BSIT | Section: 31-ITE-06 | Date: 2026-08-19</p>
 </body>
 </html>
