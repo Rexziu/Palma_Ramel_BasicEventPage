@@ -27,7 +27,7 @@ function displayGreeting() {
 //Updates the live typing feedback paragraph in real-time when the user types.
 function showTypedText() {
     typingMessage.textContent =
-        "You are typing: "; + nameInput.value;
+        "You are typing: " + nameInput.value;
 }
 
 //Changes the background color of the body to MediumPurple and updates status.
