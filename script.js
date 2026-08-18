@@ -1,6 +1,6 @@
 //DOM Element Selections
 const pageContainer = document.querySelector("#pageContainer");
-const heading = document.querySelector("#mainHeading");
+const mainheading = document.querySelector("#mainHeading");
 const nameInput = document.querySelector("#nameInput");
 const messageArea = document.querySelector("#messageArea");
 
@@ -17,7 +17,7 @@ function displayGreeting() {
         messageArea.textContent =
             "Please enter your name.";
     } else {
-        heading.textContent = "Hello, " + name + "!";
+        mainheading.textContent = "Hello, " + name + "!";
         messageArea.textContent =
             "The greeting was displayed successfully.";
     }
@@ -25,8 +25,9 @@ function displayGreeting() {
 
 //Updates the live typing feedback paragraph in real-time when the user types.
 function showTypedText() {
-    typingMessage.textContent =
-        "You are typing: " + nameInput.value;
+    messageArea.textContent = "You are typing: " + nameInput.value;
+    "You are typing: " + nameInput.value;
+    console.log("Input event deleted.");
 }
 
 //Changes the background color of the body to MediumPurple and updates status.
@@ -38,11 +39,11 @@ function changeBackground() {
 
 //Resets the page elements, inputs, background color, and status messages back to default.
 function resetPage() {
-    heading.textContent = "Basic Event Page";
+    mainheading.textContent = "Basic Event Page";
     nameInput.value = "";
-    typingMessage.textContent = "You are typing:";
     messageArea.textContent = "";
     document.body.style.backgroundColor = "#f3f4f6";
+    console.log("Reset button was clicked.")
 }
 
 //Mouseover event handler functions for console logging.
