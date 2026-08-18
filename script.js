@@ -2,7 +2,6 @@
 const pageContainer = document.querySelector("#pageContainer");
 const heading = document.querySelector("#mainHeading");
 const nameInput = document.querySelector("#nameInput");
-const typingMessage = document.querySelector("#typingMessage");
 const messageArea = document.querySelector("#messageArea");
 
 const greetingButton = document.querySelector("#greetingButton");
