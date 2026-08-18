@@ -34,8 +34,7 @@ function showTypedText() {
 function changeBackground() {
     document.body.style.backgroundColor = "MediumPurple";
     console.log("Background color changed.");
-    messageArea.textContent = 
-    "Background color changed.";
+    messageArea.textContent = "Background color changed.";
 }
 
 //Resets the page elements, inputs, background color, and status messages back to default.
@@ -43,25 +42,21 @@ function resetPage() {
     heading.textContent = "Basic Event Page";
     nameInput.value = "";
     typingMessage.textContent = "You are typing:";
-    messageArea.textContent = "Enter your name and select an action.";
+    messageArea.textContent = "";
     document.body.style.backgroundColor = "#f3f4f6";
 }
 
 //Mouseover event handler functions for console logging.
-function greetingMouseOver() {
-    console.log('The mouse is over the greeting button.');
-}
-function backgroundMouseOver() {
-    console.log('The mouse is over the background button.');
-}
-function resetMouseOver() {
-    console.log('The mouse is over the reset button.');
-}
+greetingButton.addEventListener("mouseover", function() {
+    console.log("The mouse is over the greeting button.");
+});
+backgroundButton.addEventListener("mouseover", function() {
+    console.log("The mouse is over the background button.");
+});
+resetButton.addEventListener("mouseover", function() {
+    console.log("The mouse is over the reset button.");
+});
 
-//Event Listeners
-greetingButton.addEventListener("mouseover", greetingMouseOver);
-backgroundButton.addEventListener("mouseover", backgroundMouseOver);
-resetButton.addEventListener("mouseover", resetMouseOver);
 greetingButton.addEventListener("click", displayGreeting);
 backgroundButton.addEventListener("click", changeBackground);
 resetButton.addEventListener("click", resetPage);
